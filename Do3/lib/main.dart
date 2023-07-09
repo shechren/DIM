@@ -34,37 +34,24 @@ class Home extends StatelessWidget {
                 Row(
                   children: [
                     const SizedBox(width: 10, height: 10),
-                    Container (
-                      width: 100,
-                      height: 100,
+                    ConWidget(
+                      key: UniqueKey(),
                       color: Theme.of(context).colorScheme.primary,
-                      child: const Text("동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 4,
-                        style: TextStyle(fontSize: 15),
-                      ),
+                      text: "동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세",
                     ),
                     const SizedBox(width: 10, height: 10),
-                    Container (
-                      width: 100,
-                      height: 100,
+                    ConWidget(
+                      key: UniqueKey(),
                       color: Theme.of(context).colorScheme.secondary,
-                      child: const Text("동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 4,
-                        style: TextStyle(fontSize: 15),
-                      ),
+                      text:
+                      "울산성 전투는 임진왜란에서 가장 큰 전투이며 조명 연합군 58,000여명이 동원되었으나 공격이 좌절되었다.",
                     ),
                     const SizedBox(width: 10, height: 10),
-                    Container (
-                      width: 100,
-                      height: 100,
+                    ConWidget(
+                      key: UniqueKey(),
                       color: Theme.of(context).colorScheme.tertiary,
-                      child: const Text("동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 4,
-                        style: TextStyle(fontSize: 15),
-                      ),
+                      text:
+                      "플로렌스 포스터 젠킨스는 음치로 유명하지만 카네기 홀에서 밤의 여왕의 아리아를 선보인 적이 있다.",
                     ),
                   ],
                 ),
@@ -72,37 +59,25 @@ class Home extends StatelessWidget {
                 Row(
                   children: [
                     const SizedBox(width: 10, height: 10),
-                    Container (
-                      width: 100,
-                      height: 100,
+                    ConWidget(
+                      key: UniqueKey(),
                       color: Theme.of(context).colorScheme.primaryContainer,
-                      child: const Text("동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 4,
-                        style: TextStyle(fontSize: 15),
-                      ),
+                      text:
+                      "톰 크린은 로버트 스콧 그리고 어니스트 섀클턴 모두와 함께 여행을 떠나본 기록이 있으며 3번의 남극 탐험에서 모두 생환했다.",
                     ),
                     const SizedBox(width: 10, height: 10),
-                    Container (
-                      width: 100,
-                      height: 100,
+                    ConWidget(
+                      key: UniqueKey(),
                       color: Theme.of(context).colorScheme.secondaryContainer,
-                      child: const Text("동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 4,
-                        style: TextStyle(fontSize: 15),
-                      ),
+                      text:
+                      "케르마데크 해구는 세계에서 2번째로 깊은 해구이지만 마리아나 해구에 비해 상대적으로 덜 알려진 지명이다.",
                     ),
                     const SizedBox(width: 10, height: 10),
-                    Container (
-                      width: 100,
-                      height: 100,
+                    ConWidget(
+                      key: UniqueKey(),
                       color: Theme.of(context).colorScheme.tertiaryContainer,
-                      child: const Text("동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 4,
-                        style: TextStyle(fontSize: 15),
-                      ),
+                      text:
+                      "프로그래머가 되려면 정말로 여러가지 노력을 필요로 한다. 수학, 영어는 기본이며 컴퓨터식 사고를 필수로 한다.",
                     ),
                   ],
                 )
@@ -139,10 +114,3 @@ class ConWidget extends StatelessWidget {
     );
   }
 }
-
-//        ConWidget(
-//                   key: UniqueKey(),
-//                   color: Theme.of(context).colorScheme.primary,
-//                   text:
-//                       "동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세",
-//                 ),
