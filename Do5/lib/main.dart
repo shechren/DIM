@@ -75,8 +75,6 @@ class _MyTextFieldState extends State<MyTextField> {
                       prefixIcon: const Icon(Icons.text_fields),
                       border: const OutlineInputBorder(),
                       counterText: "${150 - txtCount}자 남았습니다.",
-                      errorMaxLines: 150,
-                      errorText: "150자까지만 가능합니다.",
                     )
                 ),
               ),
