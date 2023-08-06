@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
   // isHeart 기본값 = true
   bool _isHeart = true;
 
-  
+
   void ChangeState() {
     setState(() {
       // heartChanged 역할은 bool을 반전시키는 것
@@ -44,11 +44,11 @@ class _HomeState extends State<Home> {
   }
 }
 class myIcon extends StatelessWidget {
-  final bool isHeart;
-  final VoidCallback heartChanged; // callback
+  final bool isHeart; // callback Property
+  final VoidCallback heartChanged; // callback Function
 
   const myIcon({
-    // isHeart와 heartChanged -> required로 선언만 한다.
+    // isHeart와 heartChanged -> required
     required this.isHeart,
     required this.heartChanged,
     Key? key,
@@ -64,8 +64,8 @@ class myIcon extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         GestureDetector(
-          onTap: heartChanged,
-          child: isHeart ? _heartIcon : _heartBlankIcon),
+            onTap: heartChanged,
+            child: isHeart ? _heartIcon : _heartBlankIcon),
       ],
     );
   }
